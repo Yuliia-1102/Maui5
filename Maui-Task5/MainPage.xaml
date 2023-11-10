@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_Task5.MainPage"
+             BackgroundColor="LightBlue"
+             Title="Shopping-to-basket system">
+
+    <ScrollView>
+     
+           <VerticalStackLayout
+            Spacing="5"
+            Padding="30,0">
+
+            <Image
+                x:Name="ImOne"
+                Source="https://t3.ftcdn.net/jpg/03/65/52/86/360_F_365528663_miV08QzGGVLqhRRQVQ4B9C9PtoTRJiSv.jpg"
+                SemanticProperties.Description="A photo of shopping"
+                WidthRequest="700"
+                HeightRequest="400"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Click to decide what to buy:"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Choosing the item to buy"
+                FontSize="25"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="BuyBtn"
+                Text="Buy"
+                BackgroundColor="MidnightBlue"
+                FontSize="25"
+                WidthRequest="200"
+                HeightRequest="100"
+                CornerRadius="20"
+                SemanticProperties.Hint="By clicking you are directed to a new page where you can add an item to a basket"
+                Clicked="NextPageNavigation"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
